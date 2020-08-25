@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'MTHome_Example' do
+  pod 'MTHome', :path => '../'
+
+  target 'MTHome_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
