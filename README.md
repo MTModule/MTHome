@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MTHome
 
 [![CI Status](https://img.shields.io/travis/33cun/MTHome.svg?style=flat)](https://travis-ci.org/33cun/MTHome)
@@ -27,3 +28,6 @@ pod 'MTHome'
 ## License
 
 MTHome is available under the MIT license. See the LICENSE file for more info.
+=======
+# MTHome
+>>>>>>> 1eebfa044c403dbac8bd887f394d75cdb45ea66c
