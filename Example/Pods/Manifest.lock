@@ -1,9 +1,9 @@
 PODS:
   - Masonry (1.1.0)
-  - MTHome (0.0.2):
+  - MTHome (0.0.6):
     - Masonry
-    - MTHome/Content (= 0.0.2)
-  - MTHome/Content (0.0.2):
+    - MTHome/Content (= 0.0.6)
+  - MTHome/Content (0.0.6):
     - Masonry
 
 DEPENDENCIES:
@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MTHome: 95f32ff0fd775feeedcb59486595a2ba46008dac
+  MTHome: ae086715f5085e76e2e0ce92d82515af38641496
 
 PODFILE CHECKSUM: c543535005723cbedc502a1c1c5f9d35e8c92714
 

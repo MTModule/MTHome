@@ -1,6 +1,6 @@
 {
   "name": "MTHome",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "summary": "A short description of MTHome.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/MTModule/MTHome.git",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/MTModule/MTHome.git",
-    "tag": "0.0.2"
+    "tag": "0.0.6"
   },
   "platforms": {
     "ios": "8.0"
@@ -29,7 +29,8 @@
     {
       "name": "Content",
       "source_files": "MTHome/Classes/**/*",
-      "exclude_files": "MTHome/Classes/MTHomeTarget.h"
+      "exclude_files": "MTHome/Classes/MTHomeTarget.h",
+      "frameworks": "UIKit"
     }
   ]
 }
