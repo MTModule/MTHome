@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MTHome'
-  s.version          = '0.0.4'
+  s.version          = '0.0.5'
   s.summary          = 'A short description of MTHome.'
   
   # This description is used to generate tags and improve search results.
@@ -32,8 +32,9 @@ Pod::Spec.new do |s|
   
   s.subspec 'Content' do |ss|
     ss.source_files = 'MTHome/Classes/**/*'
-#    ss.resource_bundle = { 'MTHome' => 'MTHome/Assets/*' }
+    ss.resource_bundle = { 'MTHome' => 'MTHome/Assets/*' }
     ss.exclude_files = "MTHome/Classes/MTHomeTarget.h"
+    ss.frameworks = "UIKit"
   end
   
   # s.resource_bundles = {
