@@ -8,35 +8,41 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MTHome'
-  s.version          = '0.1.0'
+  s.version          = '0.0.2'
   s.summary          = 'A short description of MTHome.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  
+  # This description is used to generate tags and improve search results.
+  #   * Think: What does it do? Why did you write it? What is the focus?
+  #   * Try to keep it short, snappy and to the point.
+  #   * Write the description between the DESC delimiters below.
+  #   * Finally, don't worry about the indent, CocoaPods strips it!
+  
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/33cun/MTHome'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  TODO: Add long description of the pod here.
+  DESC
+  
+  s.homepage         = 'https://github.com/MTModule/MTHome.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '33cun' => 'xiaoxin@evrazlabs.email' }
-  s.source           = { :git => 'https://github.com/33cun/MTHome.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.source           = { :git => 'https://github.com/MTModule/MTHome.git', :tag => s.version.to_s }
+  
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'MTHome/Classes/**/*'
+  s.source_files = 'MTHome/Classes/MTHomeTarget.{h,m}'
+  
+  s.subspec 'Content' do |ss|
+    ss.source_files = 'MTHome/Classes/**/*'
+#    ss.resource_bundle = { 'MTHome' => 'MTHome/Assets/*' }
+    ss.exclude_files = "MTHome/Classes/MTHomeTarget.h"
+  end
   
   # s.resource_bundles = {
   #   'MTHome' => ['MTHome/Assets/*.png']
   # }
-
+  
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit'
+  s.dependency 'YYKit'
+  s.dependency 'Masonry'
+  
 end

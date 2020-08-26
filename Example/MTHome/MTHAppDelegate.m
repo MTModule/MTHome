@@ -7,12 +7,18 @@
 //
 
 #import "MTHAppDelegate.h"
+#import <MTHome/MTHomeTarget.h>
+
 
 @implementation MTHAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    UIViewController *vc = [MTHomeTarget getHomeRootVC];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = nav;
+    [self.window maskView];
+    
     return YES;
 }
 

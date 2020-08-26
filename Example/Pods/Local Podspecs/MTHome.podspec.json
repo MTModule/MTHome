@@ -1,0 +1,38 @@
+{
+  "name": "MTHome",
+  "version": "0.0.2",
+  "summary": "A short description of MTHome.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/MTModule/MTHome.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "33cun": "xiaoxin@evrazlabs.email"
+  },
+  "source": {
+    "git": "https://github.com/MTModule/MTHome.git",
+    "tag": "0.0.2"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MTHome/Classes/MTHomeTarget.{h,m}",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "YYKit": [
+
+    ],
+    "Masonry": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Content",
+      "source_files": "MTHome/Classes/**/*",
+      "exclude_files": "MTHome/Classes/MTHomeTarget.h"
+    }
+  ]
+}
