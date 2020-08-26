@@ -3,13 +3,8 @@ PODS:
   - MTHome (0.0.2):
     - Masonry
     - MTHome/Content (= 0.0.2)
-    - YYKit
   - MTHome/Content (0.0.2):
     - Masonry
-    - YYKit
-  - YYKit (1.0.9):
-    - YYKit/no-arc (= 1.0.9)
-  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - MTHome (from `../`)
@@ -17,7 +12,6 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Masonry
-    - YYKit
 
 EXTERNAL SOURCES:
   MTHome:
@@ -25,8 +19,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MTHome: bfba17a26fc405b6be2a667bfec790239ea375f2
-  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  MTHome: 95f32ff0fd775feeedcb59486595a2ba46008dac
 
 PODFILE CHECKSUM: c543535005723cbedc502a1c1c5f9d35e8c92714
 

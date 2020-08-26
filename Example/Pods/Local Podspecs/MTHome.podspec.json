@@ -21,9 +21,6 @@
   "source_files": "MTHome/Classes/MTHomeTarget.{h,m}",
   "frameworks": "UIKit",
   "dependencies": {
-    "YYKit": [
-
-    ],
     "Masonry": [
 
     ]
