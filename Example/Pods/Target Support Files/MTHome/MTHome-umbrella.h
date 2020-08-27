@@ -11,7 +11,10 @@
 #endif
 
 #import "MTHomeTarget.h"
+#import "XXModel.h"
+#import "XXService.h"
 #import "MTHomeRootVC.h"
+#import "XXView.h"
 
 FOUNDATION_EXPORT double MTHomeVersionNumber;
 FOUNDATION_EXPORT const unsigned char MTHomeVersionString[];

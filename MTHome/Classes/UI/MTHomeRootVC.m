@@ -30,6 +30,12 @@
 
 #pragma mark - UI
 - (void)setupUI {
+    CGFloat marginLR = 40.f;
+    CGFloat paddingTop = 10.f;
+    CGFloat margin = 15.f;
+    CGFloat btnTop = 75.f;
+    CGFloat btnH = 35.f;
+    
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:self.tv];
@@ -37,25 +43,25 @@
     [self.view addSubview:self.btn];
     
     [self.lb mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.and.right.equalTo(self.view).inset(40.f);
+        make.left.and.right.equalTo(self.view).inset(marginLR);
         if (@available(iOS 11.0, *)) {
-            make.top.equalTo(self.view.mas_safeAreaLayoutGuideTop).inset(50.f);
+            make.top.equalTo(self.view.mas_safeAreaLayoutGuideTop).inset(paddingTop);
         } else {
-            make.top.equalTo(self.view.mas_top).inset(50.f);
+            make.top.equalTo(self.view.mas_top).inset(paddingTop);
         }
         make.height.mas_equalTo(self.lb.font.lineHeight);
     }];
     
     [self.tv mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.lb.mas_bottom).inset(15.f);
+        make.top.equalTo(self.lb.mas_bottom).inset(margin);
         make.leading.and.trailing.equalTo(self.lb);
         make.height.equalTo(self.view.mas_height).multipliedBy(.6f);
     }];
     
     [self.btn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.and.width.equalTo(self.tv);
-        make.top.equalTo(self.tv.mas_bottom).inset(75.f);
-        make.height.mas_equalTo(35.f);
+        make.top.equalTo(self.tv.mas_bottom).inset(btnTop);
+        make.height.mas_equalTo(btnH);
     }];
 }
 
@@ -67,6 +73,17 @@
 
 
 #pragma mark - Event Response
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
+}
+
+- (void)done:(UIButton *)sender {
+    NSDictionary *data = @{
+        @"tt" : self.tv.text ? : @"",
+    };
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"MTN" object:nil userInfo:data];
+}
 
 
 #pragma mark - Public Methods
@@ -115,6 +132,7 @@
         _btn = [[UIButton alloc] init];
         [_btn setTitle:@"Done" forState:UIControlStateNormal];
         [_btn setBackgroundColor:[UIColor redColor]];
+        [_btn addTarget:self action:@selector(done:) forControlEvents:UIControlEventTouchUpInside];
     }
     
     return _btn;
