@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MTHome'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'A short description of MTHome.'
   
   # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '8.0'
   
-  s.source_files = 'MTHome/Classes/**/*.{h,m}'
+  s.source_files = 'MTHome/Classes/**/Target_Home.{h,m}'
   
   s.subspec 'UI' do |ui|
     ui.source_files = 'MTHome/Classes/UI/**/*'
@@ -46,6 +46,7 @@ Pod::Spec.new do |s|
   #   'MTHome' => ['MTHome/Assets/*.png']
   # }
   
+  s.public_header_files = 'MTMine/Classes/Target_Home.h'             # 公开头文件地址
   s.frameworks = 'UIKit'
   s.dependency 'Masonry'
   s.dependency 'CTMediator'
