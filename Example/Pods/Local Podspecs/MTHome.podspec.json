@@ -18,8 +18,8 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "MTHome/Classes/MTHomeTarget.{h,m}",
-  "public_header_files": "MTHome/Classes/MTHomeTarget.h",
+  "source_files": "MTHome/Classes/CTMediator+MTModuleHomeActions.{h,m}",
+  "public_header_files": "MTHome/Classes/CTMediator+MTModuleHomeActions.h",
   "frameworks": "UIKit",
   "dependencies": {
     "Masonry": [

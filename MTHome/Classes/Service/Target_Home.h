@@ -1,5 +1,5 @@
 //
-//  MTHomeTarget.h
+//  Target_Home.h
 //  Masonry
 //
 //  Created by Eleven on 2020/8/26.
@@ -9,9 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MTHomeTarget : NSObject
+@interface Target_Home : NSObject
 
-+ (UIViewController *)getHomeRootVC;
++ (UIViewController *)Action_rootViewController:(NSDictionary *)params;
 
 @end
 

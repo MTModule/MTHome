@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MTHomeRootVC : UIViewController
 
+- (instancetype)initWithDict:(NSDictionary *)dict;
+
 @end
 
 NS_ASSUME_NONNULL_END

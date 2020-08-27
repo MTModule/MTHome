@@ -20,6 +20,14 @@
 @implementation MTHomeRootVC
 
 #pragma mark - Life Cycle
+- (instancetype)initWithDict:(NSDictionary *)dict {
+    if (self = [super init]) {
+        
+    }
+    
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '8.0'
   
-  s.source_files = 'MTHome/Classes/MTHomeTarget.{h,m}'
+  s.source_files = 'MTHome/Classes/CTMediator+MTModuleHomeActions.{h,m}'
   
   s.subspec 'UI' do |ui|
     ui.source_files = 'MTHome/Classes/UI/**/*'
@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
   #   'MTHome' => ['MTHome/Assets/*.png']
   # }
   
-  s.public_header_files = 'MTHome/Classes/MTHomeTarget.h'
+  s.public_header_files = 'MTHome/Classes/CTMediator+MTModuleHomeActions.h'
   s.frameworks = 'UIKit'
   s.dependency 'Masonry'
   s.dependency 'CTMediator'

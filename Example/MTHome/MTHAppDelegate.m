@@ -7,14 +7,15 @@
 //
 
 #import "MTHAppDelegate.h"
-#import <MTHome/MTHomeTarget.h>
+#import <CTMediator/CTMediator.h>
+#import <MTHome/CTMediator+MTModuleHomeActions.h>
 
 
 @implementation MTHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    UIViewController *vc = [MTHomeTarget getHomeRootVC];
+    UIViewController *vc = [[CTMediator sharedInstance] CTMediator_viewControllerForDetail];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
     [self.window maskView];
