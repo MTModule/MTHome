@@ -10,7 +10,11 @@
 #endif
 #endif
 
-#import "CTMediator+MTModuleHomeActions.h"
+#import "XXModel.h"
+#import "MTHomeRootVC.h"
+#import "Target_Home.h"
+#import "XXService.h"
+#import "XXView.h"
 #import "XXModel.h"
 #import "MTHomeRootVC.h"
 #import "Target_Home.h"

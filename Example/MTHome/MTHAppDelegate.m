@@ -7,8 +7,7 @@
 //
 
 #import "MTHAppDelegate.h"
-#import <CTMediator/CTMediator.h>
-#import <MTHome/CTMediator+MTModuleHomeActions.h>
+#import <Category_Home/CTMediator+Home.h>
 
 
 @implementation MTHAppDelegate

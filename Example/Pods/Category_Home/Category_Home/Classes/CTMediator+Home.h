@@ -1,17 +1,15 @@
 //
-//  CTMediator+MTModuleHomeActions.h
-//  CTMediator
+//  CTMediator+Home.h
+//  Category_Home
 //
 //  Created by Eleven on 2020/8/27.
 //
 
 #import <CTMediator/CTMediator.h>
-#import <UIKit/UIKit.h>
-
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CTMediator (MTModuleHomeActions)
+@interface CTMediator (Home)
 
 - (UIViewController *)CTMediator_viewControllerForDetail;
 

@@ -10,7 +10,8 @@
 #endif
 #endif
 
+#import "CTMediator+Home.h"
 
-FOUNDATION_EXPORT double Pods_MTHome_TestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_MTHome_TestsVersionString[];
+FOUNDATION_EXPORT double Category_HomeVersionNumber;
+FOUNDATION_EXPORT const unsigned char Category_HomeVersionString[];
 

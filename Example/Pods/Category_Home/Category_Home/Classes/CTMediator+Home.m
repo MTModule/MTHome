@@ -1,18 +1,16 @@
 //
-//  CTMediator+MTModuleHomeActions.m
-//  CTMediator
+//  CTMediator+Home.m
+//  Category_Home
 //
 //  Created by Eleven on 2020/8/27.
 //
 
-#import "CTMediator+MTModuleHomeActions.h"
+#import "CTMediator+Home.h"
 
 NSString * const kCTMediatorTargetHome = @"Home";
 NSString * const kCTMediatorActionRootViewController = @"rootViewController";
 
-
-
-@implementation CTMediator (MTModuleHomeActions)
+@implementation CTMediator (Home)
 
 - (UIViewController *)CTMediator_viewControllerForDetail {
     UIViewController *viewController = [self performTarget:kCTMediatorTargetHome
@@ -28,6 +26,5 @@ NSString * const kCTMediatorActionRootViewController = @"rootViewController";
         return [[UIViewController alloc] init];
     }
 }
-
 
 @end

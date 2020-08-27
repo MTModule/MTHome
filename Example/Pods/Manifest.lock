@@ -1,23 +1,31 @@
 PODS:
+  - Category_Home (0.1.1):
+    - CTMediator
   - CTMediator (44)
   - Masonry (1.1.0)
-  - MTHome (0.1.1):
+  - MTHome (0.1.2):
+    - Category_Home
     - CTMediator
     - Masonry
-    - MTHome/Data (= 0.1.1)
-    - MTHome/Service (= 0.1.1)
-    - MTHome/UI (= 0.1.1)
-  - MTHome/Data (0.1.1):
+    - MTHome/Data (= 0.1.2)
+    - MTHome/Service (= 0.1.2)
+    - MTHome/UI (= 0.1.2)
+  - MTHome/Data (0.1.2):
+    - Category_Home
     - CTMediator
     - Masonry
-  - MTHome/Service (0.1.1):
+  - MTHome/Service (0.1.2):
+    - Category_Home
     - CTMediator
     - Masonry
-  - MTHome/UI (0.1.1):
+  - MTHome/UI (0.1.2):
+    - Category_Home
     - CTMediator
     - Masonry
 
 DEPENDENCIES:
+  - Category_Home (from `https://github.com/MTModule/Category_Home.git`)
+  - CTMediator
   - MTHome (from `../`)
 
 SPEC REPOS:
@@ -26,14 +34,22 @@ SPEC REPOS:
     - Masonry
 
 EXTERNAL SOURCES:
+  Category_Home:
+    :git: https://github.com/MTModule/Category_Home.git
   MTHome:
     :path: "../"
 
+CHECKOUT OPTIONS:
+  Category_Home:
+    :commit: efc35e9f5cf8fd97e50f04056cf6bff4b71cd9d6
+    :git: https://github.com/MTModule/Category_Home.git
+
 SPEC CHECKSUMS:
+  Category_Home: a07f13a8dd537b30e800b312711d7627f6969ce7
   CTMediator: 933dba523da87bf875e4a7e8728945fbc512f1d2
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MTHome: d0ee4c5506037011657a0823ef4dda58fabbb2e4
+  MTHome: c47702298f7eb35a86bafdfdf87d64005bc211c6
 
-PODFILE CHECKSUM: c543535005723cbedc502a1c1c5f9d35e8c92714
+PODFILE CHECKSUM: 6e55e5a314d6312139e6cc17894a5b2b6197151b
 
 COCOAPODS: 1.9.3
