@@ -10,7 +10,7 @@
 
 @implementation Target_Home
 
-+ (UIViewController *)Action_rootViewController:(NSDictionary *)params {
+- (UIViewController *)Action_rootViewController:(NSDictionary *)params {
     MTHomeRootVC *vc = [[MTHomeRootVC alloc] initWithDict:params];
     return vc;
 }
