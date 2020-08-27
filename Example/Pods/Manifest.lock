@@ -1,15 +1,20 @@
 PODS:
+  - CTMediator (44)
   - Masonry (1.1.0)
-  - MTHome (0.1.0):
+  - MTHome (0.1.1):
+    - CTMediator
     - Masonry
-    - MTHome/Data (= 0.1.0)
-    - MTHome/Service (= 0.1.0)
-    - MTHome/UI (= 0.1.0)
-  - MTHome/Data (0.1.0):
+    - MTHome/Data (= 0.1.1)
+    - MTHome/Service (= 0.1.1)
+    - MTHome/UI (= 0.1.1)
+  - MTHome/Data (0.1.1):
+    - CTMediator
     - Masonry
-  - MTHome/Service (0.1.0):
+  - MTHome/Service (0.1.1):
+    - CTMediator
     - Masonry
-  - MTHome/UI (0.1.0):
+  - MTHome/UI (0.1.1):
+    - CTMediator
     - Masonry
 
 DEPENDENCIES:
@@ -17,6 +22,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - CTMediator
     - Masonry
 
 EXTERNAL SOURCES:
@@ -24,8 +30,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  CTMediator: 933dba523da87bf875e4a7e8728945fbc512f1d2
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MTHome: b21b9dcec83a2e9cc8936a0200418ee0e4faafc6
+  MTHome: 6c9492aa696697111bb799c76b50b3053b3b8391
 
 PODFILE CHECKSUM: c543535005723cbedc502a1c1c5f9d35e8c92714
 

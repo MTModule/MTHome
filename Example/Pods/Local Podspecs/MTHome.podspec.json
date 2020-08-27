@@ -1,6 +1,6 @@
 {
   "name": "MTHome",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "A short description of MTHome.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/MTModule/MTHome.git",
@@ -13,16 +13,19 @@
   },
   "source": {
     "git": "https://github.com/MTModule/MTHome.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "MTHome/Classes/**/*",
+  "source_files": "MTHome/Classes/MTHomeTarget.{h,m}",
   "public_header_files": "MTHome/Classes/MTHomeTarget.h",
   "frameworks": "UIKit",
   "dependencies": {
     "Masonry": [
+
+    ],
+    "CTMediator": [
 
     ]
   },
